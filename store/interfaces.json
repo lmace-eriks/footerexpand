@@ -1,0 +1,6 @@
+{
+  "footerexpand": {
+    "component": "FooterExpand",
+    "composition": "children"
+  }
+}
