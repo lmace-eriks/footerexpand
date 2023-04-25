@@ -1,0 +1,63 @@
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 15rem;
+}
+
+.button {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+    padding: 0.5rem 1.5rem 0.5rem 0;
+    border: none;
+    background: transparent;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: right;
+    width: 100%;
+}
+
+.buttonActive {}
+
+.button:hover {}
+
+.arrow {
+    display: none;
+}
+
+.buttonActive .arrow {
+    display: block;
+}
+
+.menuContainer {
+    width: 20rem;
+    overflow-x: hidden;
+    display: flex;
+    border-left: 2px solid white;
+    flex-shrink: 0;
+}
+
+.menuTrain {
+    display: flex;
+    justify-content: center;
+    transition: transform 500ms ease;
+}
+
+.childContainer {
+    flex-shrink: 0;
+}
+
+.button:focus-visible {
+    outline-offset: 4px;
+    outline: 2px solid #ec1d24;
+}
+
+@media (prefers-reduced-motion) {
+    .menuTrain {
+        transition: none !important;
+    }
+}
